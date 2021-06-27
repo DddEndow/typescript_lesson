@@ -1,4 +1,10 @@
 class Person {
+    static species = 'Homo sapiens';
+    static isAdoult(age: number) {
+        if (age > 17) return true;
+        return false;
+    }
+
     constructor(readonly name: string, protected age: number) {
     }
 
@@ -33,7 +39,5 @@ class Teacher extends Person {
     }
 }
 
-const teacher = new Teacher('Quill', 38, 'Math');
-teacher.subject = 'Music';
-console.log(teacher.subject);
-teacher.greeting();
+console.log(Person.species);
+console.log(Person.isAdoult(38));
