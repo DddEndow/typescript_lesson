@@ -64,8 +64,8 @@ function sayHello(): void | undefined {
     return;
 }
 console.log(sayHello()); // undefined
-let tmp: undefined = null;
-let tmpNull: null = undefined;
+// let tmp: undefined = null;
+// let tmpNull: null = undefined;
 
 const anotherAdd: (n1: number, n2: number) => number = add;
 const doubleNumber: (number: number) => number = num => num * 2;
