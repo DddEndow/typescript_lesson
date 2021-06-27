@@ -6,11 +6,11 @@ let single: string = 'hello';
 let double: string = "hello";
 let back: string = `hello`;
 
-const person: {
-    name: string;
-    age: number;
-} = {
-    name: 'Jack',
+const person = {
+    name: {
+        first: 'Jack',
+        last: 'Smith'
+    },
     age: 21
 }
-console.log(person.gender)
+console.log(person)
