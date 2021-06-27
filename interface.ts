@@ -1,5 +1,5 @@
 interface Human {
-    name: string;
+    readonly name: string;
     age: number;
     greeting(message: string): void;
 }
@@ -12,3 +12,14 @@ class Developer implements Human {
         console.log('Hello!');
     }
 }
+
+const tmpDeveloper = {
+    name: 'Quill',
+    age: 38,
+    experience: 3,
+    greeting(message: string) {
+        console.log(message);
+    }
+}
+const tmpUser: Human = tmpDeveloper;
+const user: Human = new Developer('Quill', 38, 3);
