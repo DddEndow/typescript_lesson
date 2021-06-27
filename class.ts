@@ -1,5 +1,8 @@
 class Person {
-    constructor(public name: string, private age: number) {
+    readonly id: number = 32;
+    constructor(public readonly name: string, private age: number) {
+        this.id = 21;
+        this.name = 'hehh';
     }
 
     incrementAge() {
