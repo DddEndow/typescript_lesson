@@ -72,3 +72,14 @@ havePet(new Bird());
 const input = document.getElementById('input') as HTMLInputElement;
 input.value = 'initial input value';
 (<HTMLInputElement>document.getElementById('input')).value = 'initial input value';
+
+interface Designer {
+    name: string;
+    [index: string]: string;
+}
+const designer: Designer = {
+    name: 'Quill',
+    role: 'web',
+    1: 'web'
+}
+console.log(designer.hoge);
