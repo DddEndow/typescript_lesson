@@ -1,6 +1,6 @@
 abstract class Person {
     static species = 'Homo sapiens';
-    static isAdoult(age: number) {
+    static isAdult(age: number) {
         if (age > 17) return true;
         return false;
     }
