@@ -29,7 +29,31 @@ function toUpperCase(x: string | number): string | number {
     }
     return '';
 }
-const upperHello = toUpperCase('hello');
+interface TmpFunc {
+    (x: string): number;
+    (x: number): number;
+}
+const upperHello: TmpFunc = function (x: string | number) { return 0 };
+
+// interface FuncA {
+//     (a: number, b: string): number;
+//     (a: string, b: number): number;
+// }
+// interface FuncB {
+//     (a: string): number;
+// }
+// let intersectionFunc: FuncA & FuncB;
+// intersectionFunc = function (a: number | string, b?: number | string) { return 0 };
+
+interface FuncA {
+    (a: number): number;
+}
+interface FuncB {
+    (a: string): string;
+}
+let unionFunc: FuncA | FuncB;
+// let unionFunc: (a: never) => number;
+unionFunc = function (a: string) { return 'hi' };
 
 type NomadWorker = Engineer | Blogger;
 function describeProfile(nomadWorker: NomadWorker) {
