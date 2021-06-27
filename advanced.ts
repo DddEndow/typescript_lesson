@@ -129,6 +129,16 @@ type id = DownloadedData["id" | "user"]
 
 // function advanceFn(...args: number[]) {
 // }
-function advanceFn(...args: [number, string?, boolean?, ...number[]]) {
+function advanceFn(...args: readonly [number, string?, boolean?, ...number[]]) {
 }
 advanceFn(0, 'hi', true, 3, 3, 3, 3);
+
+let milk = 'milk' as const;
+let drink = milk; // milk
+const array = [10, 20] as const; // readonly [10, 20]
+const peter = {
+    name: 'Peter',
+    age: 38
+} as const;
+
+type PeterType = typeof peter;
