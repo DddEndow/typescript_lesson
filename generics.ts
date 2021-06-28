@@ -57,3 +57,12 @@ interface ResponseData<T extends { message: string }= any> {
     status: number;
 }
 let tmp2: ResponseData;
+
+interface Vegetables {
+    readonly tomato: string;
+    pumpkin?: string;
+}
+type MappedTypes = {
+    // [P in 'tomato' | 'pumpkin']: P
+    -readonly [P in keyof Vegetables]-?: string
+}
