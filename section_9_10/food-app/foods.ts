@@ -1,4 +1,8 @@
 import { Foodsable } from "./interfaces.js";
+// import { Foodsable as FoodListable } from "./interfaces.js";
+// import * as Interfaces from "./interfaces.js";
+// export default class Foods
+// import Foods from "./foods.js";
 import { Food } from "./food.js";
 
 export class Foods implements Foodsable {
