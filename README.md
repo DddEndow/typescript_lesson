@@ -1,9 +1,10 @@
-# 参照元
+# チュートリアルの参照元
 https://www.udemy.com/course/typescript-complete/
 
+## 対応表
 https://kangax.github.io/compat-table/es6/
 
-## tscのコマンド一蘭
+## tscのコマンド一覧
 
 ```
 // コンパイル
