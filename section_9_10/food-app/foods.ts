@@ -1,9 +1,9 @@
-import { Foodsable } from "./interfaces.js";
+import { Foodsable } from "./interfaces";
 // import { Foodsable as FoodListable } from "./interfaces.js";
 // import * as Interfaces from "./interfaces.js";
 // export default class Foods
 // import Foods from "./foods.js";
-import { Food } from "./food.js";
+import { Food } from "./food";
 
 export class Foods implements Foodsable {
     private static instance: Foods;
